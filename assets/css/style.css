@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto+Serif:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* header */
+
+nav .nav-wrapper{
+    position: relative;
+    top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-wrapper .logo{
+    text-decoration: none;
+    font-size: 2.8rem;
+    color: #1789DC;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-wrapper .menu-wrapper{
+    display: flex;
+    gap: 100px;
+}
+
+.nav-wrapper .menu-wrapper .menu{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.nav-wrapper .menu-toggle{
+    display: none;
+}
+
+/* end of header */
+
+/* hero */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+.hero .text-side{
+    align-items: center;
+}
+
+/* end of hero */
+
+/* problem sales */
+.problem-sales{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+/* end of problem sales*/
+
+/* why-bit */
+.why-bit .card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: coral;
+}
+/* end pf why-bit*/
+
+/* price */
+.price{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+/* end of price */
+@media screen and (max-width: 500px) {
+    .menu{
+        display: none;
+    }
+}
