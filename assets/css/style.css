@@ -273,6 +273,7 @@ footer{
 }
 .footer p a{
     color: #1789DC;
+    text-decoration: none;
 }
 .icon a{
     color: #969696;
