@@ -217,10 +217,7 @@ body{
     color: white;
     border-style: none;
 }
-.content-right .image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content-right img{
     max-width: 600px;
     width: 100%;
     padding-top: 25px;
@@ -389,6 +386,41 @@ footer{
 
     .container-start-with-bit-pos .card-wrapper{
         grid-template-rows: auto;
+    }
+
+    .footer .menu-wrapper .menu{
+        flex-direction: column;
+    }
+
+    .paragraph p{
+        font-size: 10px;
+    }
+    .problem-sales .wrapper{
+        flex-direction: column;
+    }
+    .price{
+        flex-direction: column;
+    }
+    
+    .content-right .image{
+        max-width: 500px;
+    }
+    .nav-wrapper .logo{
+        font-size: 1.5rem;
+    }
+    .text-side .main-heading{
+        font-size: 1.5rem;
+    }
+    .text-side .btn-try-free{
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 15px 50px;
+    }
+    .logo-side img{
+        min-height: 400px;
+    }
+    .problem-sales h1{
+        font-size: 1.5rem;
     }
 
 }
