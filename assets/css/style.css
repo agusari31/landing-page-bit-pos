@@ -422,7 +422,23 @@ footer{
     .problem-sales h1{
         font-size: 1.5rem;
     }
-
+    .logo-side img{
+        min-height: 400px;
+    }
+    .why-bit h1{
+        font-size: 1.5rem;
+    }
+    .content-left .text-side h1{
+        font-size: 2rem;
+    }
+    .content-left .text-side h4{
+        font-size: 1rem;
+    }
+    .content-left .text-side .btn-contact-us{
+        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 15px 30px;
+    }
 }
 
 @media screen and (min-width: 700px) {
