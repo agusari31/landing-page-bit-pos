@@ -17,13 +17,14 @@ body{
 
 /* header */
 
-nav .nav-wrapper{
+.navbar .nav-wrapper{
     position: relative;
     top: 20px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
 }
 
 .nav-wrapper .logo{
@@ -64,13 +65,43 @@ nav .nav-wrapper{
 .hero{
     display: flex;
     justify-content: space-between;
-    background-color: yellow;
 }
 
-.hero .text-side{
+.hero .left-side{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+.hero .left-side .text-side{
+    padding: 50px;
+}
+
+.text-side .main-heading{
+    font-size: 2.5rem;
+}
+
+.text-side .main-heading span{
+    color: #1789DC;
+}
+
+.text-side .sub-heading{
+    font-size: 1.25rem;
+}
+
+.text-side .btn-try-free{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 15px 90px;
+    border-radius: 2rem;
+    background-color: #FF871E;
+    color: white;
+    border-style: none;
+}
+
+.logo-side img{
+    min-height: 574px;
+}
 /* end of hero */
 
 /* problem sales */
