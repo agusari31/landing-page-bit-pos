@@ -138,10 +138,46 @@ body{
 /* end pf why-bit*/
 
 /* price */
+.container-width{
+    width: 100%;
+    background-color: #4DB4FE;
+}
 .price{
     display: flex;
     justify-content: space-between;
-    background-color: blue;
+}
+.price .content-left{
+    display: flex;
+    align-items: center;
+}
+.content-left .text-side{
+    color: white;
+
+}
+.content-left .text-side h1{
+    font-size: 4.375rem;
+}
+.content-left .text-side h4{
+    font-size: 1.5rem;
+}
+.content-left .text-side s{
+    text-decoration-color: #F39C12;
+} 
+.content-left .text-side .btn-contact-us{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 15px 90px;
+    border-radius: 2rem;
+    background-color: #FF871E;
+    color: white;
+    border-style: none;
+}
+.content-right .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
 }
 /* end of price */
 @media screen and (max-width: 500px) {
