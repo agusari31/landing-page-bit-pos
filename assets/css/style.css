@@ -185,3 +185,56 @@ body{
         display: none;
     }
 }
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 50px 20px;
+}
+.footer .logo{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2.75rem;
+    color: #1789DC;
+    font-family: 'Poppins', sans-serif;
+}
+.footer .menu-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.footer .menu-wrapper .menu{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.footer .icon{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.footer p{
+    color: #ABABAB;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.footer p a{
+    color: #1789DC;
+}
+.footer a{
+    text-decoration: none;
+}
