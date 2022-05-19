@@ -227,6 +227,32 @@ body{
         display: none;
     }
 }
+/* container-wrapper */
+
+.container-wrapper{
+    width: 100%;
+}
+.container-wrapper h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #101111;
+    padding: 30px;
+}
+.container-wrapper .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 150px;
+}
+.wrapper .item{
+    justify-content: center;
+}
+.container-wrapper a{
+    text-decoration: none;
+}
+.container-wrapper span{
+    color: #1789DC;
+}
 /* start with bit pos */
 .container-start-with-bit-pos{
     padding: 50px 150px;
@@ -309,17 +335,17 @@ footer{
     justify-content: center;
     gap: 30px;
 }
-.footer p{
+.icon a{
+    color: #969696;
+}
+.paragraph p{
     color: #ABABAB;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 50px;
 }
-.footer p a{
+.paragraph p a{
     color: #1789DC;
     text-decoration: none;
-}
-.icon a{
-    color: #969696;
 }
 /* end of footer */
