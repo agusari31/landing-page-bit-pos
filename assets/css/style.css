@@ -142,7 +142,7 @@ body{
     max-width: 72px;
 }
 .problem-sales .text-side .problem p{
-    text-align: left;
+    justify-items: left;
 } 
 
 .problem-sales .logo-side img{
@@ -151,6 +151,10 @@ body{
 /* end of problem sales*/
 
 /* why-bit */
+.container-width-why-bit{
+    width: 100%;
+    background-color: #F0FBFF;
+}
 .why-bit{
     padding: 50px 0;
 }
@@ -159,6 +163,7 @@ body{
     justify-content: center;
     font-size: 3rem;
     color: #1789DC;
+    padding: 30px;
 }
 .why-bit .card-wrapper{
     display: grid;
@@ -222,37 +227,42 @@ body{
     padding-top: 25px;
 }
 /* end of price */
-@media screen and (max-width: 500px) {
-    .menu{
-        display: none;
-    }
-}
-/* container-wrapper */
 
-.container-wrapper{
+/* fitur */
+.fitur{
     width: 100%;
 }
-.container-wrapper h1{
+.fitur h1{
     display: flex;
     justify-content: center;
     font-size: 3rem;
     color: #101111;
     padding: 30px;
 }
-.container-wrapper .wrapper{
+.fitur .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 50px 150px;
+    gap: 40px;
 }
 .wrapper .item{
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 40px 60px;
 }
-.container-wrapper a{
+
+.wrapper .item p{
+    text-align: justify;
+}
+.fitur a{
     text-decoration: none;
 }
-.container-wrapper span{
+.fitur span{
     color: #1789DC;
 }
+/* end of fitur */
+
 /* start with bit pos */
 .container-start-with-bit-pos{
     padding: 50px 150px;
@@ -292,6 +302,8 @@ body{
     justify-content: center;
 }
 /* end start with bit pos */
+
+
 /* footer */
 footer{
     width: 100%;
@@ -349,3 +361,24 @@ footer{
     text-decoration: none;
 }
 /* end of footer */
+
+
+@media screen and (max-width: 500px) {
+    .nav-wrapper .menu-wrapper{
+        display: none;
+    }
+
+    .nav-wrapper .menu-toggle{
+        display: block;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .logo-side img{
+        width: 100%;
+        max-height: 574px;
+    }
+
+}
