@@ -54,6 +54,9 @@ body{
     font-family: 'Poppins', sans-serif;
     color: black;
 }
+.menu li a:hover{
+    color: #1789DC;
+}
 
 .nav-wrapper .menu-toggle{
     display: none;
@@ -216,6 +219,7 @@ body{
     align-items: center;
     max-width: 600px;
     width: 100%;
+    padding-top: 25px;
 }
 /* end of price */
 @media screen and (max-width: 500px) {
@@ -223,7 +227,45 @@ body{
         display: none;
     }
 }
+/* start with bit pos */
+.container-start-with-bit-pos{
+    padding: 50px 150px;
+    background-color: #F0FBFF;
+}
+.container-start-with-bit-pos h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: #101111;
+}
+.container-start-with-bit-pos a{
+    text-decoration: none;
+}
+.container-start-with-bit-pos span{
+    color: #1789DC;
+}
+.container-start-with-bit-pos p{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    color: #858585;
+}
+.container-start-with-bit-pos .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
 
+.container-start-with-bit-pos .card{
+    padding: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px #89deff;
+    justify-content: center;
+}
+/* end start with bit pos */
 /* footer */
 footer{
     width: 100%;
@@ -241,13 +283,12 @@ footer{
     padding: 20px 20px;
     display: flex;
     justify-content: center;
-    gap: 70px;
 }
 
 .footer .menu-wrapper .menu{
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 35px;
 }
 
 .menu li{
@@ -259,11 +300,14 @@ footer{
     font-family: 'Poppins', sans-serif;
     color: black;
 }
+.menu li a:hover{
+    color: #1789DC;
+}
 .footer .icon{
-    padding: 40px 20px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 30px;
 }
 .footer p{
     color: #ABABAB;
@@ -278,3 +322,4 @@ footer{
 .icon a{
     color: #969696;
 }
+/* end of footer */
