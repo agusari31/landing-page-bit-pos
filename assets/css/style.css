@@ -200,6 +200,7 @@ footer{
     font-family: 'Poppins', sans-serif;
 }
 .footer .menu-wrapper{
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -221,7 +222,7 @@ footer{
     color: black;
 }
 .footer .icon{
-    padding-top: 20px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -235,6 +236,6 @@ footer{
 .footer p a{
     color: #1789DC;
 }
-.footer a{
-    text-decoration: none;
+.icon a{
+    color: #969696;
 }
