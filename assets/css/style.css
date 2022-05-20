@@ -162,8 +162,14 @@ body{
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    color: #1789DC;
+    color: #0d0d0e;
     padding: 30px;
+}
+.why-bit span{
+    color: #1789DC;
+}
+.why-bit a{
+    text-decoration: none;
 }
 .why-bit .card-wrapper{
     display: grid;
