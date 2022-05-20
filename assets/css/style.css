@@ -183,7 +183,16 @@ body{
     grid-template-rows: auto;
     border-radius: 1rem;
     box-shadow: 0px 0px 15px #89deff;
-    justify-content: center;
+    justify-items: center;
+}
+
+.why-bit .card h4{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.why-bit .card p{
+    text-align: justify;
 }
 
 /* end pf why-bit*/
@@ -243,14 +252,16 @@ body{
 }
 .fitur .wrapper{
     display: grid;
-    padding: 50px 150px;
     gap: 40px;
 }
 .wrapper .item{
     display: grid;
     grid-template-rows: auto;
     justify-items: center;
-    padding: 40px 60px;
+}
+
+.wrapper .item h4{
+    padding: 30px 0px;
 }
 
 .wrapper .item p{
@@ -457,6 +468,19 @@ footer{
     .container-start-with-bit-pos{
         padding: 30px;
     }
+
+    .container-start-with-bit-pos .card-wrapper .card img{
+        width: 100%;
+    }
+
+    .wrapper .item{
+        padding: 20px 50px;
+    }
+
+    .wrapper .item img{
+        width: 100%;
+        max-width: 150px;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -466,11 +490,14 @@ footer{
 
     .fitur .wrapper{
         grid-template-columns: repeat(2, 1fr);
+        padding: 50px 150px;
     }
 
+    .wrapper .item{
+        padding: 40px 60px;
+    }
     .container-start-with-bit-pos .card-wrapper{
         grid-template-columns: repeat(3, 1fr);
     }
 
-    
 }
