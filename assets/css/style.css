@@ -16,7 +16,12 @@ body{
 }
 
 /* header */
-
+.container-session-satu{
+    background-image: url('../image/Vector\ 15.png');
+    background-position: 120%;
+    background-repeat:repeat-y;
+    background-color: #F0FBFF;
+}
 .navbar .nav-wrapper{
     position: relative;
     top: 20px;
@@ -42,7 +47,7 @@ body{
 .nav-wrapper .menu-wrapper .menu{
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 50px;
 }
 
 .menu li{
@@ -61,7 +66,6 @@ body{
 .nav-wrapper .menu-toggle{
     display: none;
 }
-
 /* end of header */
 
 /* hero */
@@ -101,10 +105,11 @@ body{
     color: white;
     border-style: none;
 }
-
 .logo-side img{
     min-height: 574px;
+    
 }
+
 /* end of hero */
 
 /* problem sales */
