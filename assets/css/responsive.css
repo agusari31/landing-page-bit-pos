@@ -2,10 +2,16 @@
     .logo-side img{
         min-height: 400px;
     }
+
+    /* header */
+    .header{
+        background-color: #fff;
+    }
+    /* end of header*/
     /* navbar */
     .nav {
         z-index: 10;
-        background-color: #fff;
+        background-color: #f8fdff;
         width: 100%;
         top: 60px;
         position: absolute;
@@ -34,15 +40,6 @@
 
 
     /* hero */
-    .hero{
-        flex-direction: column;
-    }
-
-    .logo-side img{
-        width: 100%;
-        max-height: 574px;
-    }
-
     .text-side .main-heading{
         font-size: 1.5rem;
     }
@@ -87,6 +84,7 @@
     /* price */
     .price{
         flex-direction: column;
+        padding-top: 80px;
     }
     .content-right .image{
         max-width: 500px;
@@ -158,13 +156,34 @@
     
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 799px) {
+    .hero{
+        padding-top: 70px;
+        flex-direction: column;
+    }
+
+    .logo-side img{
+        width: 100%;
+        max-height: 574px;
+    }
    
 }
 
 @media screen and (min-width: 700px) {
     .header-menu{
         display: none;
+    }
+
+    .nav-item {
+        width: 25%;
+    }
+
+    .bg-hero{
+        background-image: url("../image/Vector 15.png");
+        background-size: auto;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: right;
     }
     .why-bit .card-wrapper{
         grid-template-columns: repeat(3, 1fr);
@@ -184,4 +203,10 @@
     .container-start-with-bit-pos .card-wrapper .card img{
         width: 100%;
     }
+}
+
+@media screen and (min-width: 1000px){
+    .nav-item {
+        width: 15%;
+    }   
 }
