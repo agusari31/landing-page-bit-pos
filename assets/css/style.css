@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto+Serif:wght@300&display=swap');
 
+:root{
+    --main-color : #1789DC;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,58 +15,79 @@ body{
 }
 
 .container{
+    width: 80%;
     max-width: 1200px;
     margin: auto;
 }
 
-/* header */
-
-.navbar .nav-wrapper{
-    position: relative;
-    top: 20px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+/*header style*/
+.header {
+    width: 100%;
+    min-height: 56px;
+    transition: min-height 0.3s;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.nav-wrapper .logo{
+.header-inner {
+    width: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-title {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+    color: var(--main-color);
+    padding-left: 10%;
+}
+
+.header-menu {
+    font-size: 32px;
+    margin: 10px auto;
+    display: block;
     text-decoration: none;
-    font-size: 2.8rem;
-    color: #1789DC;
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
-.nav-wrapper .menu-wrapper{
-    display: flex;
-    gap: 100px;
+
+/*navigation style*/
+.nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.nav-wrapper .menu-wrapper .menu{
-    display: flex;
-    align-items: center;
-    gap: 70px;
+.nav-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.menu li{
-    list-style: none;
+.nav-item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    text-transform: uppercase;
 }
 
-.menu li a{
+.nav a {
+    display: inline-block;
+    padding: 1.3em;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-}
-.menu li a:hover{
-    color: #1789DC;
+    color: #616161;
 }
 
-.nav-wrapper .menu-toggle{
-    display: none;
+.nav a:hover {
+    text-decoration: underline;
+    color: #000;
 }
-
-/* end of header */
 
 /* hero */
 .hero{
@@ -369,13 +394,32 @@ footer{
 /* end of footer */
 
 
-@media screen and (max-width: 500px) {
-    .nav-wrapper .menu-wrapper{
-        display: none;
+@media screen and (max-width: 699px) {
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        top: 60px;
+        position: absolute;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(0, -300px);
+        transform: translate(0, -300px);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
     }
 
-    .nav-wrapper .menu-toggle{
-        display: block;
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav-item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
     }
 
     .hero{
@@ -477,7 +521,14 @@ footer{
     }
 }
 
+@media screen and (min-width: 550px) {
+   
+}
+
 @media screen and (min-width: 700px) {
+    .header-menu{
+        display: none;
+    }
     .why-bit .card-wrapper{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -493,5 +544,9 @@ footer{
     .container-start-with-bit-pos .card-wrapper{
         grid-template-columns: repeat(3, 1fr);
     }
+    .container-start-with-bit-pos .card-wrapper .card img{
+        width: 100%;
+    }
+
 
 }
