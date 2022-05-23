@@ -77,7 +77,10 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.nav-list .nav-item a:hover{
+    text-decoration: none;
+    color: #1789DC;
+}
 .nav-item {
     box-sizing: border-box;
     display: inline-block;

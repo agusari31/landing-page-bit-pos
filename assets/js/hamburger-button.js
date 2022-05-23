@@ -1,5 +1,6 @@
 const menu = document.querySelector('#menu');
 const main = document.querySelector("main");
+const footer = document.querySelector("footer");
 const drawer = document.querySelector('#drawer');
 
 menu.addEventListener('click', function (event) {
@@ -8,5 +9,9 @@ menu.addEventListener('click', function (event) {
 });
 
 main.addEventListener('click', function () {
+    drawer.classList.remove('open');
+});
+
+footer.addEventListener('click', function () {
     drawer.classList.remove('open');
 });
