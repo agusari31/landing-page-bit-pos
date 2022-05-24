@@ -177,10 +177,6 @@
 }
 
 @media screen and (min-width: 700px) {
-    .header{
-        background-color: white;
-        opacity: 0.5;
-    }
     .nav-list {
         padding: 10px 0px;
     }

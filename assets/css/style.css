@@ -35,6 +35,11 @@ body{
     position: fixed;
 }
 
+.bg-header{
+    background-color: white;
+    box-shadow: 0px 0px 30px #89deff;
+}
+
 .header-inner {
     width: 100%;
     text-align: left;
