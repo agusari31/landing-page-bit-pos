@@ -9,7 +9,6 @@ window.onscroll = function(){
 
 function addBgHeader(){
     if(window.pageYOffset > heroOffSet){
-        console.log("haha");
         header.classList.add("bg-header");
 
     }else{
